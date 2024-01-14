@@ -1,0 +1,222 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/realistic-polygonal-background_52683-59998.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703894400&semt=ais);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000d0f;
+
+}
+
+.title{
+    width: 50%;
+    height: auto;
+    transform: translate(50%,100%);
+    transition: transform 0.50s;
+
+}
+
+h1 {
+    margin: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    font-family:Tahoma;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    
+}
+
+.me{
+    width: 90%;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.section {
+    width: 21%;
+    height: 21%;
+    padding: 15px;
+    
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #ffd900;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: width 0.30s , height 0.30s , transform 0.50s;
+}
+
+
+.section:hover{
+    background-color: black;
+    color: white;
+    width: 27%;
+    height: 27%;
+}
+
+
+.section:active {
+    animation: bt-anime 0.50s ;
+}
+
+
+@keyframes bt-anime {
+    from {
+        width: 21%;
+        height: 21%;
+        
+        transform: rotate(0);
+    }
+
+    to{
+        width: 10%;
+        height: 10%;
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.table {
+    padding: 15px;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    display:none;
+    text-align: center;
+    animation: table-anime 0.50s;
+    transform: translateX(50%,50%);
+}
+
+@keyframes table-anime {
+    from {
+        opacity:0 ;
+        transform: rotateX(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(-10deg);
+    }
+}
+
+tr {
+    text-align: center;
+    background-color: #000d0f;
+    padding: 10px;
+    
+}
+
+input,
+td {
+    width:180px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+input {
+    color: rgb(255, 255, 255);
+    outline: none;
+    text-align: center;
+    border: 3px solid black;
+    background: transparent;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+input:focus,
+input:valid {
+    color: rgb(0, 205, 0);
+    border: 3px solid rgb(0, 205, 0);
+}
+
+tr,
+td{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 217, 0);
+    background-color: #000d0f;
+    
+}
+
+.get {
+    
+    width: 21%;
+    height: 21%;
+    padding: 15px;
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    background : linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4) ;
+    background-size: 400%;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.get:hover {
+    
+    animation: get-animate 8s linear infinite ;
+    color: white;
+    width: 27%;
+    height: 27%;
+    
+    
+    
+}
+
+
+@keyframes get-animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.get::before {
+    content: '';
+    
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+    background : linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4) ;
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.get:hover::before {
+    opacity: 1;
+    filter: blur(20px);
+    animation: get-animate 8s linear infinite ;
+    
+}
+
+.moy {
+    margin: 0px;
+    color: white;
+    
+}

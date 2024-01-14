@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> calcule Moyenne</title>
+        <link rel="stylesheet" href="styles.css">
+        
+
+    </head>
+
+    
+    <body>
+        
+        <div class="title" id="title">
+
+            <h1> Calcule Prépa Moyenne </h1>    
+
+            <div class="me">
+                <button class="section" onclick="main()"> MP </button>
+                <button class="section" onclick="main()"> PC </button>
+                <button class="section" onclick="main()"> PT </button>
+    
+            </div>
+        </div>
+
+
+        <div class="table" id="table">
+            <table bgcolor="black">
+                <tr>
+                    <th>Matière</th>
+                    <th>Note.TP</th>
+                    <th>Note.CC</th>
+                    <th>Note.DS</th>
+                    <th> Note.Examen</th>
+                    <th>Coef. de la matière en MP</th>
+                </tr>
+                <tr>
+                    <td>Analyse</td>
+                    <td></td>
+                    <td><input type="number" id="analyse-cc" placeholder="-----"></td>
+                    <td><input type="number" id="analyse-ds" placeholder="-----" ></td>
+                    <td><input type="number" id="analyse-examen" placeholder="-----"></td>
+                    <td> 7 </td>
+                </tr>
+
+                <tr>
+                    <td>Algébre</td>
+                    <td></td>
+                    <td><input type="number" id="algébre-cc" placeholder="-----"></td>
+                    <td><input type="number" id="algébre-ds" placeholder="-----" ></td>
+                    <td><input type="number" id="algébre-examen" placeholder="-----"></td>
+                    <td> 7 </td>
+                </tr>
+    
+                <tr>
+                    <td>Physique1</td>
+                    <td><input type="number" id="phy1-tp" placeholder="-----"></td>
+                    <td><input type="number" id="phy1-cc" placeholder="-----" ></td>
+                    <td><input type="number" id="phy1-ds" placeholder="-----" ></td>
+                    <td><input type="number" id="phy1-examen" placeholder="-----"></td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td>Physique2</td>
+                    <td></td>
+                    <td><input type="number" id="phy2-cc" placeholder="-----" ></td>
+                    <td><input type="number" id="phy2-ds" placeholder="-----" ></td>
+                    <td><input type="number" id="phy2-examen" placeholder="-----"></td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td>Chimie</td>
+                    <td><input type="number" id="chimie-tp" placeholder="-----"></td>
+                    <td><input type="number" id="chimie-cc" placeholder="-----"></td>
+                    <td><input type="number" id="chimie-ds" placeholder="-----"></td>
+                    <td><input type="number" id="chimie-examen" placeholder="-----"></td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td>Français</td>
+                    <td></td>
+                    <td><input type="number" id="français-cc" placeholder="-----"></td>
+                    <td><input type="number" id="français-ds" placeholder="-----"></td>
+                    <td><input type="number" id="français-examen" placeholder="-----"></td>
+                    <td> 3 </td>
+                </tr>
+
+                <tr>
+                    <td>Anglais</td>
+                    <td></td>
+                    <td><input type="number" id="anglais-cc" placeholder="-----"></td>
+                    <td><input type="number" id="anglais-ds" placeholder="-----"></td>
+                    <td><input type="number" id="anglais-examen" placeholder="-----"></td>
+                    <td> 3 </td>
+                </tr>
+
+                <tr>
+                    <td>Informatique</td>
+                    <td></td>
+                    <td><input type="number" id="info-cc" placeholder="-----"></td>
+                    <td><input type="number" id="info-ds" placeholder="-----"></td>
+                    <td><input type="number" id="info-examen" placeholder="-----"></td>
+                    <td> 4 </td>
+                </tr>
+
+                <tr>
+                    <td>S.T. Automatisé</td>
+                    <td></td>
+                    <td><input type="number" id="sta-cc" placeholder="-----"></td>
+                    <td><input type="number" id="sta-ds" placeholder="-----"></td>
+                    <td><input type="number" id="sta-examen" placeholder="-----" ></td>
+                    <td> 5 </td>
+                </tr>
+    
+    
+                    
+            </table>
+
+            
+            <button class="get" id ="get" onclick="moyenne()"> GET Moyenne !</button>
+
+            <h1 class="moy" id ="moy"></h1>
+            
+        </div>
+        
+
+
+        <script src = "main.js"></script>
+    </body>
+
+
+
+
+</html>
